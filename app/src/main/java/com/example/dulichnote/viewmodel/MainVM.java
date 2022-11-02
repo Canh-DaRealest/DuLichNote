@@ -31,6 +31,9 @@ public class MainVM extends ViewModel {
         String str =null;
         String name = null;
         String linkPhoto = null;
+        String location = null;
+        double lat = 0;
+        double lgn = 0;
         StringBuilder desc = new StringBuilder();
         listPlace = new ArrayList<>();
         while ((str = bufferedReader.readLine()) != null) {
@@ -39,6 +42,10 @@ public class MainVM extends ViewModel {
 
             if (name == null) {
                 name = str;
+            }else if (location==null){
+                location = str;
+                lat = Double.parseDouble(location.split(",")[0]);
+                lat = Double.parseDouble(location.split(",")[1]);
             }
             else if (linkPhoto==null){
                 linkPhoto = str;
@@ -47,9 +54,10 @@ public class MainVM extends ViewModel {
                 desc.append(str).append("\n");
 
             } else {
-                listPlace.add(new PlaceItem(name,  desc.toString(),linkPhoto));
+                listPlace.add(new PlaceItem(name,  desc.toString(),linkPhoto, lat, lgn));
                 name = null;
                 linkPhoto= null;
+                location =null;
                 desc = new StringBuilder();
             }
         }

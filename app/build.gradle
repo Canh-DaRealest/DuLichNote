@@ -63,6 +63,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
         //lotttie animation
     implementation 'com.airbnb.android:lottie:5.2.0'
-
+//ggmap
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+   //playservice
+    implementation 'com.google.android.gms:play-services-location:21.0.0'
 
 }

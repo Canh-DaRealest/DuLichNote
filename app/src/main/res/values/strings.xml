@@ -5,4 +5,5 @@
     <string name="splash_text">DU LICH NOTE</string>
     <string name="lang_bac_txt">"Lăng Bác nằm ngay bên Quảng trường Ba Đình lịch sử, nơi Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn độc lập ra đời nước Cộng hoà xã hội chủ nghĩa Việt Nam. Nơi an nghỉ vĩnh hằng của vị lãnh tụ vĩ đại của dân tộc được bao phủ trong không gian cây vườn bốn mùa xanh tươi toả bóng mát. "</string>
     <string name="txt_langbac">Lang Bac</string>
+    <string name="API_KEY">AIzaSyC7u56mHiTXqqyBz-v-irjfgIDkVXeicZg</string>
 </resources>

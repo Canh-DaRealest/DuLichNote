@@ -52,7 +52,7 @@ public abstract class BaseActivity<T extends ViewBinding, M extends ViewModel> e
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-            fragmentTransaction.replace(R.id.fr_container, fragment);
+            fragmentTransaction.replace(R.id.fr_container, fragment, tag);
 
             if (isBacked) {
                 fragmentTransaction.addToBackStack(tag);
